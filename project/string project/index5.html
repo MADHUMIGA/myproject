@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="para">
+            <p id="message">vtytbhythyr</p>
+        </div>
+        <div class="inputdiv">
+            <input type="text" id="input" list="datas" placeholder="enter">
+            <datalist id="datas">
+                <option value="length"></option>
+                <option value="toupper"></option>
+                <option value="reverse"></option>
+            </datalist>
+        </div>
+        <div class="button">
+            <button type="submit" onclick="find()" >search</button>
+        </div>
+        <div class="result"></div>
+    </div>
+    <script>
+        function find1()
+        {
+            let inpt=(document.getElementById("message").value);
+            const val=inpt.length;
+            let result=(document.getElementById("result"));
+            result.innerHTML=val;
+         }
+        
+        
+        function find3()
+        {
+            let inpt=(document.getElementById("input").value);
+            const val=inpt.length;
+            let result=(document.getElementById("result"));
+            result.innerHTML=val;
+         }
+
+        
+    </script>
+</body>
+</html>

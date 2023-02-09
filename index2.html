@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!---- <link rel="stylesheet" href="./index2.css">-->
+    <title>Document2</title>
+</head>
+<body>
+   <!--<header>
+        <nav>
+            <h3>Name</h3>
+            <ul>
+                <li>Home</li>
+                <li>About me</li>
+                <li>Achievements</li>
+                <li>Skills</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sec1">
+        <p class="para"><strike>Practice Makes Perfect</strike></p>
+        <p class="para1">Perfect Practice Makes Perfect</p>
+        </section>
+    <section class="sec2">        
+        <h2>Name</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio itaque, omnis nihil voluptatem laborum 
+            perferendis corrupti veritatis aut tempore repellendus tenetur eum ex est! A voluptate alias ipsum minus iure?</p>
+        </section>
+        <main></main>
+        <footer>
+        </footer>-->
+       <!----<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio itaque, omnis nihil voluptatem laborum 
+                    perferendis corrupti veritatis aut tempore repellendus tenetur eum ex est! A voluptate alias ipsum minus iure?</p>
+<div class ="container">
+    <div class="row">
+        <div class="col-4">col</div>
+        <div class="col-4">col</div>
+        <div class="col-4">col</div>
+        <div class="col-4">col</div>
+    </div>-->
+<input type="text" class="city">
+<button onclick="temp()">search</button>
+<p id="cityname"></p>
+<h1 id="temp"></h1>
+<script>
+    function temp(){
+        var name=document.getElementById("city").value;
+        var key=`851e8c79811e2cfc68bfabfafae5d895`
+        var url=`https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&q=q${name}appid=${ key}`
+    
+    fetch(url)
+    .then(data=>data.json())
+    .then(data=>{
+        document.getElementById("cityname").innerHTML=data.name;
+        document.getElementById("temp").innerHTML=data.temp;
+
+    })
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,66 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam&display=swap');
+
+body{
+   margin: 0;
+   font-family: 'Dancing Script', cursive;
+   font-family: 'Kalam', cursive;;
+   background-color:#faf9f6;
+}
+
+#wrapper div,#wrapper h2{
+    display:flex;
+    justify-content: center;
+    
+}
+
+h2{
+    color:#0f0e0d;
+    letter-spacing: 2px;
+}
+input{
+    border-radius: 10px;
+    border: 2px solid rgb(150, 209, 32) ;
+    margin-top:30px;
+    height:3em;
+    width:250px;
+    padding-left:80px;
+    padding-right:30px;
+    
+}
+
+input{
+    border:none;
+}
+#wrapper{
+    height:500px;
+    width:400px;
+    margin:200px auto;
+    background-color:#dec524;
+    border-radius:10px;
+    padding:30px;
+}
+
+button{
+    margin-top:20px;
+    background-color:#ffeba7;
+    border-radius: 4px;
+    height: 44px;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border-color: rgb(105, 181, 248);
+    background-color: #f4be78;
+    color: #102770;
+    border-radius: 10px;
+    font-style: oblique;
+}
+
+button{
+    cursor:pointer;
+}
+#result{
+    color:white;
+    margin-top:20px;
+    font-size:32px;
+}
